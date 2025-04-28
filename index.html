@@ -1,0 +1,61 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="quiz-header">
+            <h1>Knowledge Quiz Challenge</h1>
+            <p>Test your knowledge with these trivia questions!</p>
+        </div>
+        
+        <div class="quiz-body">
+            <div class="stats">
+                <div>Question <span id="current-question">1</span>/<span id="total-questions">10</span></div>
+                <div>Score: <span id="score">0</span></div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar" id="progress"></div>
+            </div>
+            
+            <div id="question-container" class="question-container">
+                <div class="question" id="question">Loading question...</div>
+                <div class="options-container" id="options-container">
+                    <!-- Options will be inserted here -->
+                </div>
+            </div>
+            
+            <div id="result" class="result hidden">
+                <h2>Quiz Completed!</h2>
+                <p>Your final score is:</p>
+                <div class="score" id="final-score">0/10</div>
+                <p id="result-message">Well done!</p>
+            </div>
+            
+            <div class="controls">
+                <button id="prev-btn" class="btn" disabled>Previous</button>
+                <button id="next-btn" class="btn" disabled>Next</button>
+                <button id="restart-btn" class="btn hidden">Restart Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load data first -->
+    <script src="js/quizData.js"></script>
+    
+    <!-- Load utility functions -->
+    <script src="js/utils.js"></script>
+    
+    <!-- Load the Quiz class -->
+    <script src="js/quiz.js"></script>
+    
+    <!-- Initialize the app -->
+    <script src="js/app.js"></script>
+</body>
+</html>
