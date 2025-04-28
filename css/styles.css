@@ -1,0 +1,175 @@
+/* ========== Global Styles ========== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ========== Layout Containers ========== */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ========== Quiz Header ========== */
+.quiz-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-header h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.quiz-header p {
+    color: #7f8c8d;
+}
+
+/* ========== Quiz Body ========== */
+.quiz-body {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== Question Block ========== */
+.question-container {
+    margin-bottom: 20px;
+}
+
+.question {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* ========== Options ========== */
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    background-color: #f1f2f6;
+    border: 2px solid #f1f2f6;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option:hover {
+    background-color: #e8eaf6;
+    border-color: #5c6bc0;
+}
+
+/* Option States */
+.selected {
+    background-color: #e8eaf6;
+    border-color: #5c6bc0;
+}
+
+.correct {
+    background-color: #c8e6c9;
+    border-color: #4caf50;
+}
+
+.incorrect {
+    background-color: #ffcdd2;
+    border-color: #f44336;
+}
+
+/* ========== Controls (Buttons & Navigation) ========== */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 24px;
+    background-color: #5c6bc0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3f51b5;
+}
+
+.btn:disabled {
+    background-color: #b0bec5;
+    cursor: not-allowed;
+}
+
+/* ========== Progress Bar ========== */
+.progress-container {
+    height: 8px;
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #5c6bc0;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+/* ========== Quiz Stats ========== */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: #7f8c8d;
+}
+
+/* ========== Result Screen ========== */
+.result {
+    text-align: center;
+}
+
+.result h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.result p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.score {
+    font-size: 48px;
+    font-weight: bold;
+    color: #5c6bc0;
+    margin: 20px 0;
+}
+
+/* ========== Utility Classes ========== */
+.hidden {
+    display: none;
+}
